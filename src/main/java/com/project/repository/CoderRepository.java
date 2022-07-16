@@ -3,9 +3,11 @@ package com.project.repository;
 import com.project.model.Coder;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface CoderRepository extends JpaRepository<Coder, Integer> {
 
     // Spring Data JPA is able to automatically add functionality to certain methods.
